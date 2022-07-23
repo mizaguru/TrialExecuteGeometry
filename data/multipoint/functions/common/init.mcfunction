@@ -1,5 +1,5 @@
 #
-#
+# 実行に必要な前提条件
 #
 
 scoreboard objectives add _ dummy
