@@ -4,8 +4,8 @@
 # 
 
 # 補助軸設置
-execute as @e[limit=1,tag=B] at @s facing entity @e[limit=1,tag=A,sort=nearest] feet positioned ^1 ^ ^ run summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b,Tags:["axis_l","+"]}
-execute as @e[limit=1,tag=B] at @s facing entity @e[limit=1,tag=A,sort=nearest] feet positioned ^-1 ^ ^ run summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b,Tags:["axis_l","-"]}
+execute as @e[limit=1,tag=B] at @s facing entity @e[limit=1,tag=A,sort=nearest] feet positioned ^1 ^ ^ run summon minecraft:marker ~ ~ ~ {NoGravity:1b,Tags:["axis_l","+"]}
+execute as @e[limit=1,tag=B] at @s facing entity @e[limit=1,tag=A,sort=nearest] feet positioned ^-1 ^ ^ run summon minecraft:marker ~ ~ ~ {NoGravity:1b,Tags:["axis_l","-"]}
 execute at @e[limit=1,tag=B] as @e[tag=axis_l,distance=..3,limit=2] at @s facing entity @e[tag=axis_l,limit=1,sort=furthest] feet run tp @s ~ ~ ~ ~ ~
 
 # 移動前座標
